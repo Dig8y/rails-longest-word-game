@@ -1,0 +1,13 @@
+<h2 class="title">RESULT</h2>
+
+<div class='score-container'>
+  <%= @message %>
+
+  <br>
+
+  <p>Score for that round: <%= @score.round(3) %></p>
+
+  <br>
+
+  <%= link_to 'Play again', new_path, :style=>'text-decoration: none;',:class=>'btn btn-primary' %>
+</div>
